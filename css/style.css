@@ -230,7 +230,7 @@ body {
   width: 50%;
   max-width: 100%;
   height: 100%;
-  background-image: url(../../img/Photo1.svg);
+  background-image: url(../img/Photo1.svg);
   background-size: cover;
   background-position: center;
 }
@@ -248,7 +248,7 @@ body {
   margin-bottom: 100px;
 }
 .main_2 .bg_image {
-  background-image: url(../../img/bg_image.svg);
+  background-image: url(../img/bg_image.svg);
   background-repeat: no-repeat;
   width: 50%;
   height: 100%;
@@ -591,7 +591,7 @@ body {
   gap: 30px;
 }
 .main_4 .list_product .homemade {
-  background-image: url(../../img/homemade.svg);
+  background-image: url(../img/homemade.svg);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -1100,7 +1100,7 @@ span {
   gap: 100px;
 }
 .main_7 .bg_image {
-  background-image: url(../../img/bg_7.svg);
+  background-image: url(../img/bg_7.svg);
   background-repeat: no-repeat;
   width: 60%;
   height: 100%;
@@ -1362,7 +1362,7 @@ span {
   padding: 50px;
 }
 .main_9 .bg_image {
-  background-image: url(../../img/bg_9.svg);
+  background-image: url(../img/bg_9.svg);
   background-repeat: no-repeat;
   width: 50%;
   height: 100%;
