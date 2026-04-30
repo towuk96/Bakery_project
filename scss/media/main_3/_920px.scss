@@ -1,0 +1,22 @@
+@media (max-width: 920px) {
+    .main_3 {
+        height: auto;
+    }
+
+    .main_3 .down {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main_3 .down .cup,
+    .main_3 .down .cake,
+    .main_3 .down .broad {
+        width: 48%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .main_3 .down .broad {
+        width: 100%;
+    }
+}

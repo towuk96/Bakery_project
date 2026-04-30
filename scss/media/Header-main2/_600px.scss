@@ -1,0 +1,64 @@
+@media (max-width: 600px) {
+    .Header {
+        padding: 0 20px;
+    }
+
+    .Header .header_left {
+        .logo {
+            font-size: 3rem;
+        }
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .Header .header_left .header_menu {
+        gap: 15px;
+        font-size: 1.4rem;
+    }
+
+    .Header .header_right {
+        margin-right: 0;
+    }
+
+    .Header .header_right .contact {
+        width: 70px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .container .main .info {
+        padding: 20px;
+    }
+
+    .container .main .info h1 {
+        font-size: 3rem;
+
+        line-height: 40px;
+    }
+
+    .main_2 .moment_list .up h1 {
+        font-size: 3rem;
+
+        line-height: 40px;
+    }
+
+    .main_2 {
+        .bg_image {
+            margin: 0;
+        }
+        .moment_list{
+            margin: 0;
+        }
+        .bg_image .img_1 {
+            left: 0;
+        }
+        .bg_image .img_2 {
+            left: 70px;
+            top: 140px;
+        }
+        img {
+            width: 250px;
+            height: auto;
+        }
+        padding: 20px;
+    }
+}

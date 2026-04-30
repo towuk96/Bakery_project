@@ -1,0 +1,99 @@
+@use "../variables/colors" as *;
+@use "../mixins/mixins" as *;
+
+.main_6 {
+    @include flex($justify: flex-start, $alight: flex-start, $direction: column);
+    background-color: $bg-color-dark;
+    max-width: 100%;
+    gap: 50px;
+    padding: 135px;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .up {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 20px;
+        h5 {
+            @include font_second($color: $font-white);
+            font-weight: 400;
+        }
+        h1 {
+            @include font_title($font-size: 5.6rem, $color: $font-white);
+            line-height: 64px;
+        }
+    }
+    .down {
+        width: 100%;
+        height: max-content;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        .bread {
+            background-color: $bg-color-primary;
+            display: flex;
+            flex-direction: column;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            h5 {
+                @include font_second ($font-size: 1.6rem);
+                font-weight: 400;
+            }
+            h1 {
+                @include font_title($font-size: 4rem);
+                line-height: 64px;
+                max-width: 100%;
+            }
+            p {
+                @include font_other($font-size: 1.6rem);
+                color: $font-gray;
+                max-width: 60%;
+            }
+            .text {
+                padding: 30px;
+                @include flex ($alight: flex-start, $direction: column);
+                gap: 10px;
+                div {
+                    @include flex ($justify: space-between);
+                    gap: 10px;
+                }
+            }
+        }
+        .other {
+            background-color: $bg-color-primary;
+            display: flex;
+            flex-direction: column;
+            .text {
+                @include flex ($direction:column, $alight:flex-start);
+                padding: 20px;
+                width: 100%;
+                gap: 20px;
+                }
+                .up {
+                    width: 100%;
+                    gap: 5px;
+                    @include flex ($justify: space-between);
+                    p {
+                    @include font_other;
+                    font-weight: 400;
+                    }
+                    div {
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+                p {
+                    @include font_other ($font-size: 2rem);
+                    font-weight: 400;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    span {
+        @include font_other ($color: $font-gray)
+    }

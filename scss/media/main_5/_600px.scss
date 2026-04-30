@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+    .main_5 .up h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    .main_5 .down {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .main_5 .down .text {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+}

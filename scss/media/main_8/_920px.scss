@@ -1,0 +1,27 @@
+@media (max-width: 920px) {
+    .main_8 {
+        height: auto;
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .main_8 .up h1 {
+        width: 100%;
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+    .main_8 .down {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main_8 .down .block {
+        width: 48%;
+    }
+
+    .main_8 .down .block:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}

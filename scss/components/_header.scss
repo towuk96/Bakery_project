@@ -1,0 +1,46 @@
+@use "../mixins/mixins" as *;
+@use "../variables/colors" as *;
+
+.Header {
+    @include flex (space-between);
+    max-width: 1440px;
+    width: 100%;
+    height: 89px;
+    background-color: $bg-color-primary;
+    .header_left {
+        @include flex(flex-start);
+        width: 50%;
+        margin-left: 135px;
+        gap: 71px;
+        .logo {
+            @include font_title ($font-size: 4rem)
+        }
+        .header_menu {
+            @include flex;
+            @include font_other;
+            gap: 30px;
+            li a {
+                @include font_other;
+                &:hover {
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+    .header_right {
+        @include flex;
+        max-width: 50%;
+        margin-right: 135px;
+        .contact {
+            @include flex;
+            background-color: $bg-color-dark;
+            width: 138px;
+            height: 48px;
+            @include font_second ($color:$font-white);
+            transition: all 500ms ease;
+            &:hover {
+                background-color: #3a3a3a;
+            }
+        }
+    }
+}

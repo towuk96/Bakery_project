@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+    footer {
+        padding: 20px;
+    }
+
+    footer .footer_container {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer_bottom {
+        align-items: flex-start;
+    }
+
+    footer .footer_bottom .footer_links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

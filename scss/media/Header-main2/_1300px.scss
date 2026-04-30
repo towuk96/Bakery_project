@@ -1,0 +1,31 @@
+@media (max-width: 1300px) {
+    .Header .header_left {
+        margin-left: 50px;
+        gap: 30px;
+    }
+
+    .Header .header_right {
+        margin-right: 50px;
+    }
+
+    .main_2 {
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+    }
+
+    .main_2 .bg_image,
+    .main_2 .moment_list {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .main_2 .bg_image {
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    .main_2 .moment_list .down img {
+        display: none;
+    }
+}

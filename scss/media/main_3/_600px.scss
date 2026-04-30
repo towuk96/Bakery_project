@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+    .main_3 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main_3 .up h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    .main_3 .down {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main_3 .down .cup,
+    .main_3 .down .cake,
+    .main_3 .down .broad {
+        h1 {
+            font-size: 3rem;
+        }
+        width: 100%;
+        padding: 20px;
+    }
+}

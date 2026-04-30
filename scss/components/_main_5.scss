@@ -1,0 +1,88 @@
+@use "../variables/colors" as *;
+@use "../mixins/mixins" as *;
+
+.main_5 {
+    background-color: $bg-color-dark;
+    @include flex($justify: flex-start, $direction: column, $alight: center);
+    height: 700px;
+    max-width: 100%;
+    gap: 50px;
+    .process {
+        @include flex($direction: column);
+        max-width: 100%;
+    }
+    .up {
+        @include flex($direction: column);
+        gap: 20px;
+        margin: 100px 0 50px 0;
+        h5 {
+            @include font_second($color: $font-white);
+            font-weight: 400;
+        }
+        h1 {
+            @include font_title($font-size: 5.6rem, $color: $font-white);
+            line-height: 64px;
+        }
+    }
+    .down {
+        @include flex;
+        max-width: 100%;
+        margin: 0 100px;
+        height: 400px;
+        align-items: center;
+        background-color: $bg-color-primary;
+        .text {
+            padding: 0 60px;
+            max-width: 25%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+                z-index: 2;
+                background-color:#f9bf77
+            }
+            h1 {
+                @include font_title($font-size: 4rem, $color: $font-black);
+                line-height: 48px;
+                margin-top: 20px;
+            }
+            h5 {
+                @include font_second;
+                font-weight: 400;
+            }
+            p {
+                @include font_other($font-size: 1.6rem);
+                color: $font-gray;
+                line-height: 32px;
+            }
+            .text_down {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        .active {
+            position: relative;
+            h1 {
+                @include font_title($font-size: 4rem);
+                line-height: 48px;
+                margin-top: 20px;
+            }
+            p {
+                @include font_other($font-size: 1.6rem);
+                color: $font-gray;
+            }
+            .absolut {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}

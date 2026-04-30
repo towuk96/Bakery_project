@@ -1,0 +1,82 @@
+@use "../mixins/mixins" as *;
+@use "../variables/colors" as *;
+
+.main_7 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    height: 850px;
+    padding: 135px;
+    margin-bottom: 100px;
+    gap: 100px;
+    .bg_image {
+        background-image: url(../../img/bg_7.svg);
+        background-repeat: no-repeat;
+        width: 60%;
+        height: 100%;
+        position: relative;
+        .img_1 {
+            position: absolute;
+            top: 40px;
+            left: 110px;
+            img {
+                max-width: 100%;
+                min-width: 400px;
+                height: auto;
+            }
+        }
+    }
+    .baker {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        .up {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h5{
+                @include font_second;
+                    font-weight: 400; 
+            }
+            h1 {
+                @include font_title ($font-size: 5.6rem);
+                    line-height: 64px;
+            }
+        }
+        .down {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 70%;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50px;
+                left: -100px;
+
+            }
+            h5 {
+                @include font_second;
+                    font-weight: 400; 
+            }
+            h4 {
+                @include font_second ($font-size: 2.4rem);
+                    font-weight: 400; 
+                    letter-spacing: 0px;
+            }
+            p{
+                @include font_other ($font-size: 1.6rem);
+                color: $font-gray;
+                width: 80%;
+            }
+            h6{
+                @include font_other ($font-size: 1.6rem);
+                font-weight: 400;
+            }
+        }
+    }
+}

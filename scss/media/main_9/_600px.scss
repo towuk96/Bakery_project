@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+    .main_9 {
+        .moment_list {
+            margin-top: 450px;
+        }
+        padding: 20px;
+    }
+
+    .main_9 .bg_image {
+        height: 200px;
+    }
+
+    .main_9 .moment_list .up h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    .main_9 .moment_list .down {
+        flex-direction: column;
+    }
+
+    .main_9 .moment_list .down .block {
+        width: 100%;
+    }
+
+    .main_9 .moment_list .down .block img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .main_9 .moment_list .down .block p {
+        width: 100%;
+    }
+
+    .main_9 .moment_list .button {
+        max-width: 100%;
+        justify-content: flex-start;
+    }
+}

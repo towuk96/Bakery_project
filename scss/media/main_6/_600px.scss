@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+    .main_6 {
+        padding: 20px;
+    }
+
+    .main_6 .up h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    .main_6 .down {
+        grid-template-columns: 1fr;
+    }
+
+    .main_6 .down .bread {
+        grid-column: auto;
+    }
+
+    .main_6 .down .bread h1 {
+        font-size: 2.5rem;
+        line-height: 32px;
+    }
+
+    .main_6 .down .bread p {
+        max-width: 100%;
+    }
+
+    .main_6 .down .other p {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+}

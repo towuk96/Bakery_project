@@ -1,0 +1,19 @@
+@media (max-width: 920px) {
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .footer_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    footer .footer_bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .footer_bottom .footer_links {
+        gap: 30px;
+    }
+}

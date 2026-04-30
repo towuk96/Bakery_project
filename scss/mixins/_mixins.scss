@@ -1,0 +1,32 @@
+@mixin font_title (
+    $color: #000000, $font-size: 1.6rem, $font-family: "Ultra"
+    ) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    letter-spacing: 0px;
+    font-weight: 100;
+}
+
+@mixin font_second (
+    $color: #000000, $font-size: 1.6rem, $font-family: "Oswald"
+    ) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    letter-spacing: 3px;
+}
+
+@mixin font_other ($color: #000000, $font-size: 1.6rem, $font-family: "DM Sans"
+    ) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+@mixin flex ($justify: center, $alight: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alight;
+    flex-direction: $direction;
+}

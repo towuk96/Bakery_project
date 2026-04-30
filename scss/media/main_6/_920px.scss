@@ -1,0 +1,28 @@
+@media (max-width: 920px) {
+    .main_6 {
+        padding: 50px;
+    }
+
+    .main_6 .up {
+        width: 100%;
+    }
+
+    .main_6 .up h1 {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+    .main_6 .down {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .main_6 .down .bread {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .main_6 .down .bread p {
+        max-width: 100%;
+    }
+}

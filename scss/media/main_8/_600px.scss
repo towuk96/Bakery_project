@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+    .main_8 {
+        padding: 20px;
+    }
+
+    .main_8 .up h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    .main_8 .down {
+        flex-direction: column;
+    }
+
+    .main_8 .down .block {
+        width: 100%;
+    }
+
+    .main_8 .down .block .text p {
+        width: 100%;
+    }
+}

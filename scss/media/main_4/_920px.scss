@@ -1,0 +1,34 @@
+@media (max-width: 920px) {
+    .main_4 {
+        padding: 50px;
+    }
+
+    .main_4 .text {
+        width: 100%;
+    }
+
+    .main_4 .text h1 {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+    .main_4 .list_product {
+        .other .text .price {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .main_4 .list_product .homemade {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .main_4 .list_product .homemade h1,
+    .main_4 .list_product .homemade p {
+        max-width: 100%;
+    }
+}

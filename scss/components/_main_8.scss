@@ -1,0 +1,61 @@
+@use "../variables/colors" as *;
+@use "../mixins/mixins" as *;
+
+.main_8 {
+    @include flex($justify: flex-start, $direction: column);
+    height: 700px;
+    width: 82%;
+    gap: 50px;
+    .up {
+        @include flex($direction: column);
+        gap: 20px;
+        text-align: center;
+        h5 {
+            @include font_second;
+            font-weight: 400;
+        }
+        h1 {
+            @include font_title($font-size: 5.6rem);
+            line-height: 64px;
+            width: 70%;
+        }
+    }
+    .down {
+        width: 99%;
+        @include flex;
+        .block {
+            padding: 20px;
+            width: 33%;
+            @include flex ($direction: column);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+                z-index: 2;
+                background-color:#f9bf77
+            }
+            .image {
+                @include flex ($justify:space-between, $alight: flex-start);
+                width: 100%;
+                .stars {
+                    padding-top: 20px;
+                }
+            }
+            .text {
+                @include flex($direction: column, $alight: flex-start);
+                gap: 20px;
+                h4 {
+                @include font_second($font-size: 2.4rem);
+                    font-weight: 400; 
+                    letter-spacing: 0px;
+                }
+                p{
+                @include font_other ($font-size: 1.6rem);
+                color: $font-gray;
+                width: 80%;
+                line-height: 32px
+            }
+            }
+        }
+    }
+}
